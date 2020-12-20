@@ -1,0 +1,30 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea,img { padding:0; margin:0; border:none;}
+input,button,select,textarea,a,img{outline:none; }
+body {font-size:14px; width:100%; overflow-x:hidden;  font-family:"Microsoft YaHei","SimSun","Arial";}
+html{ width:100%;}
+a img {	border:none;}
+a {	text-decoration:none; outline:none; padding:0; margin:0; cursor:pointer; cursor:hand;}
+ul, ul li, ol li, li {	list-style:none;}
+table {	border-collapse: collapse;border-spacing:0;}
+input, textarea {border: 0;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: ".";clear: both;height: 0;}
+* html .clearfix {zoom: 1;}
+*:first-child + html .clearfix {zoom: 1;}
+.wrap{ width: 1200px; margin: 0 auto;}
+.fl {	float:left;}
+.fr {	float:right;}
+.none{	display:none;}
+.nrp{text-overflow: ellipsis; white-space: nowrap; word-break:keep-all; overflow: hidden;}/*设置文字超出部分为省略号*/
+a{cursor:pointer; text-decoration:none;}
+a:hover{text-decoration: none;}
+i{font-style:normal;}
+.hide{overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;}
+.clearfloat{clear:both;}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
