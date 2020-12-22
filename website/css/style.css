@@ -1,6 +1,6 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea,img { padding:0; margin:0; border:none;}
 input,button,select,textarea,a,img{outline:none; }
-body {font-size:14px; width:100%;  font-family:"Microsoft YaHei","SimSun","Arial";}
+body {font-size:14px; width:100%;overflow-x: hidden;  font-family:"Microsoft YaHei","SimSun","Arial";}
 html{ width:100%;}
 a img {	border:none;}
 a {	text-decoration:none; outline:none; padding:0; margin:0; cursor:pointer; cursor:hand;}
