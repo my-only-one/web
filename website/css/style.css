@@ -64,7 +64,8 @@ i{font-style:normal;}
     width: 220px;
     margin: 0 10px;
 }
-.nav li a{
+/*一级菜单*/
+.nav li.li-level1 a.nav-name{
     position: relative;
     display: block;
     text-align: center;
@@ -72,14 +73,14 @@ i{font-style:normal;}
     font-size: 16px;
     color: #0080f8;
 }
-.nav li a::after{
+.nav li.li-level1 a.nav-name::after{
     content: '';
     transition:all 0.3s ease-in-out;
     transform: scale3d(0,1,1);
     transform-origin:50% 0;
 }
-.nav li a.active::after,
-.nav li a:hover::after{
+.nav li.li-level1 a.nav-name.active::after,
+.nav li.li-level1 a.nav-name:hover::after{
     position: absolute;
     content: '';
     height: 6px;
@@ -91,6 +92,33 @@ i{font-style:normal;}
     background-color: #0080f8;
     transform:scale3d(1,1,1);
 }
+/*二级菜单*/
+.nav li .ulLevel-2{
+    display: none;
+    background-color: #fff;
+}
+.nav li .ulLevel-2 li{
+    margin: 0;
+}
+.nav li .ulLevel-2 li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    transition: all 1s;
+}
+.nav li .ulLevel-2 li:last-child a{
+    border-bottom:none;
+}
+.nav li .ulLevel-2 li a.active,
+.nav li .ulLevel-2 li a:hover{
+    
+    background-color: #1d8cf5;
+    color: #fff;
+}
+
 
 /*******banner********/
 .banner {
@@ -117,6 +145,7 @@ i{font-style:normal;}
     padding: 35px 30px 0;
 }
 .main p{
+    text-indent: 2em;
     line-height: 26px;
     color: #333333;
 }
